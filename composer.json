@@ -1,5 +1,5 @@
 {
-    "name": "horde/service-weather",
+    "name": "horde/service_weather",
     "description": "Weather service library",
     "type": "library",
     "homepage": "https://www.horde.org/libraries/Horde_Service_Weather",
@@ -11,28 +11,23 @@
             "role": "lead"
         }
     ],
-    "version": "2.5.6",
-    "time": "2020-12-01",
+    "time": "2021-03-13",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com/"
         }
     ],
     "require": {
-        "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Date": "^2",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Http": "^2",
-        "pear-pear.horde.org/Horde_Translation": "^2.2",
-        "pear-pear.horde.org/Horde_Url": "^2"
+        "php": "^7",
+        "horde/date": "^3",
+        "horde/exception": "^3",
+        "horde/http": "^3",
+        "horde/translation": "^3",
+        "horde/url": "^3"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2.1"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Service_Weather": "2.*",
-        "pear-horde/Horde_Service_Weather": "2.*"
+        "horde/test": "^3"
     },
     "autoload": {
         "psr-0": {
